@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+  <ion-content padding="true" class="has-header">
+    <ion-slides #mySlider disable-side-menu-drag="" (ionSlideDidChange)="slideCambia()" options="{'loop': true}" slider="slider1" delegate-handle="slider1" id="sugerencias-slider1" style="width:100%;height:250px; z-index:1; margin-top:-180px; position: relative;">
+      <ion-slide>
+        <div class="calendar" >
+          <!-- LINEA1 -->
+          <ul class="start" >
+            <li class="{{tipoDias1[i]}}" *ngFor="let fila of myCalendario.Linea1; let i = index" >{{fila}}</li>
+          </ul>
+
+          <!-- LINEA2 -->
+          <ul class="start" >
+            <li class="{{tipoDias1[i]}}" *ngFor="let fila of myCalendario.Linea2; let i = index" >{{fila}}</li>
+          </ul>
+
+          <!-- LINEA3 -->
+          <ul class="start" >
+            <li class="{{tipoDias1[i]}}" *ngFor="let fila of myCalendario.Linea3; let i = index" >{{fila}}</li>
+          </ul>
+
+          <!-- LINEA4 -->
+          <ul class="start" >
+            <li class="{{tipoDias1[i]}}" *ngFor="let fila of myCalendario.Linea4; let i = index" >{{fila}}</li>
+          </ul>
+
+          <!-- LINEA5 -->
+          <ul class="start" >
+            <li class="{{tipoDias1[i]}}" *ngFor="let fila of myCalendario.Linea5; let i = index" >{{fila}}</li>
+          </ul>
+
+          <!-- LINEA6 -->
+          <ul class="start" >
+            <li class="{{tipoDias1[i]}}" *ngFor="let fila of myCalendario.Linea6; let i = index" >{{fila}}</li>
+          </ul>
+
+
+        </div>
+      </ion-slide>
+
+    </ion-slides>
+  </ion-content>
